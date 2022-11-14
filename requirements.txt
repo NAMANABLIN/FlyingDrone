@@ -1,0 +1,8 @@
+PyQt5                 5.15.7
+PyQt5-Qt5             5.15.2
+PyQt5-sip             12.11.0
+PyAudio               0.2.12
+numpy                 1.22.3
+opencv-python         4.5.5.64
+vosk                  0.3.44
+fuzzywuzzy            0.18.0

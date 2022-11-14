@@ -7,6 +7,7 @@ from PyQt5.QtGui import QPixmap, QImage
 from PyQt5.QtCore import QTimer
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
+
 me = Tello()
 me.connect()
 me.streamoff()
@@ -30,8 +31,8 @@ class MyWidget(QMainWindow):
         except Exception as e:
             print(e)
         height, width, channel = img.shape
-        bytesPerLine = 3 * width
-        img = QImage(img.data, width, height, bytesPerLine, QImage.Format_BGR888)
+        bytes_per_line = 3 * width
+        img = QImage(img.data, width, height, bytes_per_line, QImage.Format_BGR888)
         try:
             self.image.setPixmap(QPixmap(img))
         except Exception as e:
